@@ -10,7 +10,7 @@ package com.wsw.designpattern.singleton;
  * @date:   2019年4月2日
  * @Copyright: http://www.iwangsiwei.com
  */
-public class Singleton01 {
+public class Singleton {
 
 	
 }
@@ -93,4 +93,22 @@ class 奔驰a {
     public static 奔驰a getInstance() {
     	return benzAHolder.benzA;
     }
+}
+
+/**   
+ * 	懒汉式单例在多线程情况下创建多个对象的解决方法3
+ * 
+ * 	使用同步机制，多线程情况下效率低不推荐
+ */
+class 奔驰gle {
+	private static 奔驰gle benzGLE;
+	private 奔驰gle() {
+		super();
+	}
+	public static synchronized 奔驰gle getInstance() {
+		if(benzGLE == null) {
+			benzGLE = new 奔驰gle();
+		}
+		return benzGLE;
+	}
 }
