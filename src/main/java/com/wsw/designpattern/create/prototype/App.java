@@ -1,4 +1,4 @@
-package com.wsw.designpattern.prototype;
+package com.wsw.designpattern.create.prototype;
 
 /**   
  * @ClassName:  App   

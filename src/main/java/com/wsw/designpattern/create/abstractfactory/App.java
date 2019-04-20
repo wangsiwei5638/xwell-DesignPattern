@@ -1,4 +1,4 @@
-package com.wsw.designpattern.abstractfactory;
+package com.wsw.designpattern.create.abstractfactory;
 
 /**   
  * @ClassName:  App   

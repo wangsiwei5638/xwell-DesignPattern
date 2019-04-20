@@ -1,4 +1,4 @@
-package com.wsw.designpattern.factorypattern;
+package com.wsw.designpattern.create.factory;
 /**   
  * @ClassName:  Benz   
  * @Description:

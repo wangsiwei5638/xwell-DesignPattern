@@ -1,4 +1,4 @@
-package com.wsw.designpattern.singleton;
+package com.wsw.designpattern.create.singleton;
 
 /**   
  * @ClassName:  Singleton01   

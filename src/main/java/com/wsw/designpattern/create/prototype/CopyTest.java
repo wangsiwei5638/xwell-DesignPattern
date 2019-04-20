@@ -1,4 +1,4 @@
-package com.wsw.designpattern.prototype;
+package com.wsw.designpattern.create.prototype;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
