@@ -1,7 +1,7 @@
 package com.wsw.designpattern.factorypattern;
 
 /**   
- * @ClassName:  FactoryPattern   
+ * @ClassName:  App   
  * @Description:
  * 
  * 					工厂模式:
@@ -13,7 +13,7 @@ package com.wsw.designpattern.factorypattern;
  * @date:   2019年4月3日
  * @Copyright: http://www.iwangsiwei.com
  */
-public class FactoryPattern {
+public class App {
 
 	public static void main(String[] args) {
 		BenzFactory benzFactory1 = new BenzCFactory();

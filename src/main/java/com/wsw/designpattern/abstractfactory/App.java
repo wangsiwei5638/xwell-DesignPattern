@@ -1,7 +1,7 @@
 package com.wsw.designpattern.abstractfactory;
 
 /**   
- * @ClassName:  AbstractFactory   
+ * @ClassName:  App   
  * @Description:
  * 
  * 					抽象工厂模式
@@ -12,7 +12,7 @@ package com.wsw.designpattern.abstractfactory;
  * @date:   2019年4月3日
  * @Copyright: http://www.iwangsiwei.com
  */
-public class AbstractFactory {
+public class App {
 
 	public static void main(String[] args) {
 		BenzAbstractFactory b1 = new ChinaBenzFactory();
