@@ -23,14 +23,14 @@ public class Singleton {
  * 	用空间换时间的思路
  * 
  */
-class 奔驰e{
-	private static 奔驰e benzE = new 奔驰e();
+class BenzE{
+	private static BenzE benzE = new BenzE();
 	//private关键字私有其构造方法，外部无法创建该类的实例对象
-	private 奔驰e() {
+	private BenzE() {
 		super();
 	}
-	//对外部提供获取奔驰e实例对象的方法
-	public static 奔驰e getInstance() {
+	//对外部提供获取BenzE实例对象的方法
+	public static BenzE getInstance() {
 		return benzE;
 	}
 }
@@ -41,14 +41,14 @@ class 奔驰e{
  * 
  * 	用时间换空间的设计思路
  */
-class 奔驰c{
-	private static 奔驰c benzC = null;
-	private 奔驰c() {
+class BenzC{
+	private static BenzC benzC = null;
+	private BenzC() {
 		super();
 	}
-	public static 奔驰c getInstance() {
+	public static BenzC getInstance() {
 		if(benzC == null) {
-			benzC = new 奔驰c();
+			benzC = new BenzC();
 		}
 		return benzC;
 	}
@@ -59,17 +59,17 @@ class 奔驰c{
  * 
  * 	双重检查与加锁实现
  */
-class 奔驰s {
-	private static 奔驰s benzS;
-    private 奔驰s() {
+class BenzS {
+	private static BenzS benzS;
+    private BenzS() {
 		super();
 	}
 	// 双重检查,多线程情况下确保
-    public static 奔驰s getInstance() {
+    public static BenzS getInstance() {
         if (benzS == null) {
-            synchronized (奔驰s.class) {
+            synchronized (BenzS.class) {
                 if (benzS == null) {
-                	benzS = new 奔驰s();
+                	benzS = new BenzS();
                 }
             }
         }
@@ -82,15 +82,15 @@ class 奔驰s {
  * 
  * 	静态内部类法
  */
-class 奔驰a {
-	//通过静态内部类来获取奔驰a对象实例
+class BenzA {
+	//通过静态内部类来获取BenzA对象实例
 	private static class benzAHolder{
-		public static 奔驰a benzA = new 奔驰a();
+		public static BenzA benzA = new BenzA();
 	}
-    private 奔驰a() {
+    private BenzA() {
 		super();
 	}
-    public static 奔驰a getInstance() {
+    public static BenzA getInstance() {
     	return benzAHolder.benzA;
     }
 }
@@ -100,14 +100,14 @@ class 奔驰a {
  * 
  * 	使用同步机制，多线程情况下效率低不推荐
  */
-class 奔驰gle {
-	private static 奔驰gle benzGLE;
-	private 奔驰gle() {
+class BenzGLE {
+	private static BenzGLE benzGLE;
+	private BenzGLE() {
 		super();
 	}
-	public static synchronized 奔驰gle getInstance() {
+	public static synchronized BenzGLE getInstance() {
 		if(benzGLE == null) {
-			benzGLE = new 奔驰gle();
+			benzGLE = new BenzGLE();
 		}
 		return benzGLE;
 	}
